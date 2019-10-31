@@ -40,3 +40,44 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const navItemOne = document.querySelectorAll('a');
+navItemOne[0].setAttribute('src', siteContent['nav']['nav-item-1']);
+
+const heading1 = document.querySelector('h1');
+heading1.textContent = siteContent['cta']['h1'];
+
+const button = document.querySelector('button');
+button.textContent = siteContent['cta']['button'];
+
+// const codeSnippetImage = document.querySelector('#cta');
+// codeSnippetImage.setAttribute('src', siteContent['cta']['img-src']);
+
+const featuresH4 = document.querySelectorAll('h4');
+featuresH4[0].textContent = siteContent['main-content']['features-h4'];
+const featuresContent = document.querySelector('p');
+featuresContent.textContent = siteContent['main-content']['features-content'];
+
+const aboutH4 = document.querySelectorAll('h4');
+aboutH4[1].textContent = siteContent['main-content']['about-h4'];
+const aboutContent = document.querySelectorAll('p');
+aboutContent[1].textContent = siteContent['main-content']['about-content'];
+
+// const middleImg = document.querySelector('middle-img');
+// middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+const servicesH4 = document.querySelectorAll('h4');
+servicesH4[2].textContent = siteContent['main-content']['services-h4'];
+const servicesContent = document.querySelectorAll('p');
+servicesContent[2].textContent = siteContent['main-content']['services-content'];
+
+const productH4 = document.querySelectorAll('h4');
+productH4[3].textContent = siteContent['main-content']['product-h4'];
+const productContent = document.querySelectorAll('p');
+servicesContent[3].textContent = siteContent['main-content']['product-content'];
+
+const visionH4 = document.querySelectorAll('h4');
+productH4[4].textContent = siteContent['main-content']['vision-h4'];
+const visionContent = document.querySelectorAll('p');
+visionContent[4].textContent = siteContent['main-content']['vision-content'];
+
